@@ -1,0 +1,11 @@
+node_modules/
+.env
+<<<<<<< HEAD
+.env.local
+.vercel
+.DS_Store
+*.log
+=======
+*.log
+.DS_Store
+>>>>>>> 31a7419c9e95be07dbe9b806a86f496cc81f2b8b

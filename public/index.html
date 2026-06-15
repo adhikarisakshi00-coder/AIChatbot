@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NayePankh Foundation – AI Assistant</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+<<<<<<< HEAD
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+=======
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+>>>>>>> 31a7419c9e95be07dbe9b806a86f496cc81f2b8b
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #f0f4f8;
+      min-height: 100vh;
+<<<<<<< HEAD
+      display: flex; align-items: center; justify-content: center;
+      padding: 20px;
+    }
+    .page { width: 100%; max-width: 480px; display: flex; flex-direction: column; gap: 16px; }
+
+    .brand { display: flex; align-items: center; gap: 12px; }
+    .brand-logo {
+      width: 44px; height: 44px; border-radius: 12px;
+      background: #1a5276;
+      display: flex; align-items: center; justify-content: center; font-size: 22px;
+=======
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .page {
+      width: 100%;
+      max-width: 480px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    /* Branding */
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .brand-logo {
+      width: 44px; height: 44px;
+      border-radius: 12px;
+      background: #1a5276;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 22px;
+>>>>>>> 31a7419c9e95be07dbe9b806a86f496cc81f2b8b
+    }
+    .brand h1 { font-size: 18px; font-weight: 600; color: #1a2636; }
+    .brand p  { font-size: 12px; color: #64748b; }
+
+<<<<<<< HEAD
+    #chat-card {
+      background: #fff; border-radius: 18px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.09);
+      display: flex; flex-direction: column;
+      height: 560px; overflow: hidden;
+    }
+
+    #chat-header {
+      background: #1a5276; padding: 14px 18px;
+      display: flex; align-items: center; gap: 12px; flex-shrink: 0;
+    }
+    #chat-header .av {
+      width: 38px; height: 38px; border-radius: 50%;
+      background: rgba(255,255,255,0.18);
+      display: flex; align-items: center; justify-content: center; font-size: 17px;
+    }
+    #chat-header .hinfo h2 { font-size: 14px; font-weight: 600; color: #fff; }
+    #chat-header .hinfo p  { font-size: 11px; color: rgba(255,255,255,0.65); }
+    #chat-header .status {
+      margin-left: auto; font-size: 11px; color: rgba(255,255,255,0.8);
+      display: flex; align-items: center; gap: 5px;
+    }
+    .dot { width: 7px; height: 7px; border-radius: 50%; background: #2ecc71; }
+
+    #quick-btns {
+      padding: 10px 14px; display: flex; gap: 7px; flex-wrap: wrap;
+      border-bottom: 1px solid #f1f5f9; flex-shrink: 0; background: #f8fafc;
+    }
+    .qbtn {
+      font-size: 12px; padding: 5px 11px;
+      border: 1px solid #cbd5e1; border-radius: 20px;
+      background: #fff; color: #475569; cursor: pointer;
+      font-family: 'Inter', sans-serif; transition: all 0.15s;
+    }
+    .qbtn:hover { background: #1a5276; color: #fff; border-color: #1a5276; }
+
+    #messages {
+      flex: 1; overflow-y: auto; padding: 16px;
+      display: flex; flex-direction: column; gap: 14px;
+=======
+    /* Chat card */
+    #chat-card {
+      background: #fff;
+      border-radius: 18px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.09);
+      display: flex;
+      flex-direction: column;
+      height: 560px;
+      overflow: hidden;
+    }
+
+    /* Header */
+    #chat-header {
+      background: #1a5276;
+      padding: 14px 18px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-shrink: 0;
+    }
+    #chat-header .av {
+      width: 38px; height: 38px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.18);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 17px;
+    }
+    #chat-header .hinfo h2 { font-size: 14px; font-weight: 600; color: #fff; }
+    #chat-header .hinfo p  { font-size: 11px; color: rgba(255,255,255,0.65); }
+    #chat-header .status   {
+      margin-left: auto; font-size: 11px; color: rgba(255,255,255,0.8);
+      display: flex; align-items: center; gap: 5px;
+    }
+    #chat-header .dot { width: 7px; height: 7px; border-radius: 50%; background: #2ecc71; }
+
+    /* Quick buttons */
+    #quick-btns {
+      padding: 10px 14px;
+      display: flex; gap: 7px; flex-wrap: wrap;
+      border-bottom: 1px solid #f1f5f9;
+      flex-shrink: 0;
+      background: #f8fafc;
+    }
+    .qbtn {
+      font-size: 12px; padding: 5px 11px;
+      border: 1px solid #cbd5e1;
+      border-radius: 20px;
+      background: #fff; color: #475569;
+      cursor: pointer; white-space: nowrap;
+      font-family: 'Inter', sans-serif;
+      transition: all 0.15s;
+    }
+    .qbtn:hover { background: #1a5276; color: #fff; border-color: #1a5276; }
+
+    /* Messages */
+    #messages {
+      flex: 1;
+      overflow-y: auto;
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      scroll-behavior: smooth;
+>>>>>>> 31a7419c9e95be07dbe9b806a86f496cc81f2b8b
+    }
+
+    .msg { display: flex; gap: 9px; align-items: flex-start; max-width: 88%; }
+    .msg.user { flex-direction: row-reverse; align-self: flex-end; }
+
+    .av-sm {
+      width: 30px; height: 30px; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 11px; font-weight: 600; flex-shrink: 0;
+    }
+    .av-bot  { background: #1a5276; color: #fff; }
+    .av-user { background: #e0f2fe; color: #0369a1; }
+
+<<<<<<< HEAD
+    .bubble { padding: 10px 14px; border-radius: 16px; font-size: 14px; line-height: 1.65; }
+    .msg.bot  .bubble { background: #f1f5f9; color: #1e293b; border-top-left-radius: 4px; }
+    .msg.user .bubble { background: #1a5276; color: #fff; border-top-right-radius: 4px; }
+
+    .typing {
+      display: flex; gap: 5px; align-items: center;
+      padding: 10px 14px; background: #f1f5f9;
+      border-radius: 16px; border-top-left-radius: 4px; width: fit-content;
+=======
+    .bubble {
+      padding: 10px 14px;
+      border-radius: 16px;
+      font-size: 14px; line-height: 1.65;
+    }
+    .msg.bot  .bubble { background: #f1f5f9; color: #1e293b; border-top-left-radius: 4px; }
+    .msg.user .bubble { background: #1a5276; color: #fff;    border-top-right-radius: 4px; }
+
+    /* Typing */
+    .typing {
+      display: flex; gap: 5px; align-items: center;
+      padding: 10px 14px;
+      background: #f1f5f9; border-radius: 16px; border-top-left-radius: 4px;
+      width: fit-content;
+>>>>>>> 31a7419c9e95be07dbe9b806a86f496cc81f2b8b
+    }
+    .typing span {
+      width: 7px; height: 7px; border-radius: 50%; background: #94a3b8;
+      animation: bounce 1s infinite;
+    }
+    .typing span:nth-child(2) { animation-delay: 0.15s; }
+    .typing span:nth-child(3) { animation-delay: 0.30s; }
+    @keyframes bounce {
+      0%,80%,100% { transform: translateY(0); }
+<<<<<<< HEAD
+      40% { transform: translateY(-6px); }
+    }
+
+    #input-row {
+      padding: 12px 14px; border-top: 1px solid #f1f5f9;
+      display: flex; gap: 9px; flex-shrink: 0; background: #fff;
+=======
+      40%         { transform: translateY(-6px); }
+    }
+
+    /* Input row */
+    #input-row {
+      padding: 12px 14px;
+      border-top: 1px solid #f1f5f9;
+      display: flex; gap: 9px;
+      flex-shrink: 0; background: #fff;
+>>>>>>> 31a7419c9e95be07dbe9b806a86f496cc81f2b8b
+    }
+    #user-input {
+      flex: 1; padding: 9px 14px;
+      border: 1px solid #cbd5e1; border-radius: 24px;
+      font-size: 14px; font-family: 'Inter', sans-serif;
+      outline: none; color: #1e293b; background: #f8fafc;
+    }
+    #user-input:focus { border-color: #1a5276; background: #fff; }
+    #send-btn {
+<<<<<<< HEAD
+      width: 38px; height: 38px; border-radius: 50%; border: none;
+      background: #1a5276; color: #fff; cursor: pointer;
+      font-size: 16px; display: flex; align-items: center; justify-content: center;
+=======
+      width: 38px; height: 38px; border-radius: 50%;
+      border: none; background: #1a5276; color: #fff;
+      cursor: pointer; font-size: 18px;
+      display: flex; align-items: center; justify-content: center;
+>>>>>>> 31a7419c9e95be07dbe9b806a86f496cc81f2b8b
+      transition: opacity 0.15s; flex-shrink: 0;
+    }
+    #send-btn:hover    { opacity: 0.85; }
+    #send-btn:disabled { opacity: 0.45; cursor: not-allowed; }
+
+<<<<<<< HEAD
+    .footer-note { text-align: center; font-size: 11px; color: #94a3b8; }
+    .footer-note a { color: #1a5276; text-decoration: none; }
+
+    @media (max-width: 520px) {
+      body { padding: 10px; align-items: flex-start; }
+      #chat-card { height: calc(100vh - 130px); }
+=======
+    /* Error toast */
+    #toast {
+      display: none; position: fixed; bottom: 24px; left: 50%; transform: translateX(-50%);
+      background: #dc2626; color: #fff; padding: 10px 20px;
+      border-radius: 10px; font-size: 13px; z-index: 999;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    .footer-note {
+      text-align: center; font-size: 11px; color: #94a3b8;
+    }
+    .footer-note a { color: #1a5276; text-decoration: none; }
+    .footer-note a:hover { text-decoration: underline; }
+
+    @media (max-width: 520px) {
+      body { padding: 10px; align-items: flex-start; }
+      #chat-card { height: calc(100vh - 120px); }
+>>>>>>> 31a7419c9e95be07dbe9b806a86f496cc81f2b8b
+    }
+  </style>
+</head>
+<body>
+<<<<<<< HEAD
+=======
+
+<div id="toast"></div>
+
+>>>>>>> 31a7419c9e95be07dbe9b806a86f496cc81f2b8b
+<div class="page">
+
+  <div class="brand">
+    <div class="brand-logo">🌱</div>
+    <div>
+      <h1>NayePankh Foundation</h1>
+<<<<<<< HEAD
+      <p>AI Assistant</p>
+=======
+>>>>>>> 31a7419c9e95be07dbe9b806a86f496cc81f2b8b
+    </div>
+  </div>
+
+  <div id="chat-card">
+<<<<<<< HEAD
+    <div id="chat-header">
+      <div class="av">🤝</div>
+=======
+
+    <div id="chat-header">
+      <div class="av"></div>
+>>>>>>> 31a7419c9e95be07dbe9b806a86f496cc81f2b8b
+      <div class="hinfo">
+        <h2>NayePankh Assistant</h2>
+        <p>Ask about volunteering, donations &amp; programs</p>
+      </div>
+<<<<<<< HEAD
+      <div class="status"><div class="dot"></div> Online</div>
+    </div>
+
+    <div id="quick-btns">
+      <button class="qbtn" onclick="sendQuick('How can I volunteer with Nayepankh?')">🙋 Volunteer</button>
+      <button class="qbtn" onclick="sendQuick('How do I donate to the foundation?')">💛 Donate</button>
+      <button class="qbtn" onclick="sendQuick('What is Nayepankh Foundation?')">📖 About us</button>
+      <button class="qbtn" onclick="sendQuick('What programs does Nayepankh run?')">🎓 Programs</button>
+      <button class="qbtn" onclick="sendQuick('How can I contact the foundation?')">📞 Contact</button>
+=======
+      <div class="status">
+        <div class="dot"></div> Online
+      </div>
+    </div>
+
+    <div id="quick-btns">
+      <button class="qbtn" onclick="sendQuick('How can I volunteer with Nayepankh?')"> Volunteer</button>
+      <button class="qbtn" onclick="sendQuick('How do I donate to the foundation?')"> Donate</button>
+      <button class="qbtn" onclick="sendQuick('What is Nayepankh Foundation?')"> About</button>
+      <button class="qbtn" onclick="sendQuick('What programs does Nayepankh run?')"> Programs</button>
+      <button class="qbtn" onclick="sendQuick('How can I contact the foundation?')"> Contact</button>
+>>>>>>> 31a7419c9e95be07dbe9b806a86f496cc81f2b8b
+    </div>
+
+    <div id="messages">
+      <div class="msg bot">
+        <div class="av-sm av-bot">NP</div>
+        <div class="bubble">
+<<<<<<< HEAD
+          🌱 <strong>Namaste!</strong> I'm the NayePankh AI Assistant — here to help you learn about our foundation, explore volunteering opportunities, support our mission, or answer any questions you have.<br><br>
+=======
+           <strong>Namaste!</strong> I'm the NayePankh AI Assistant. I can help you learn about our foundation, explore volunteering, support our mission, or answer any questions.<br><br>
+>>>>>>> 31a7419c9e95be07dbe9b806a86f496cc81f2b8b
+          How can I help you today?
+        </div>
+      </div>
+    </div>
+
+    <div id="input-row">
+      <input type="text" id="user-input" placeholder="Ask me anything about NayePankh..." autocomplete="off" />
+<<<<<<< HEAD
+      <button id="send-btn" onclick="handleSend()">➤</button>
+    </div>
+  </div>
+
+  <p class="footer-note"><a href="https://nayepankh.com" target="_blank">nayepankh.com</a></p>
+</div>
+
+<script>
+  const memory = { userName: null, interests: [], history: [] };
+=======
+      <button id="send-btn" onclick="handleSend()" title="Send">➤</button>
+    </div>
+
+  </div>
+
+  <p class="footer-note">
+    <a href="https://nayepankh.com" target="_blank">nayepankh.com</a> ·
+    Conversations are not stored 
+  </p>
+
+</div>
+
+<script>
+  /* ── Memory (in-session only, never sent to any DB) ── */
+  const memory = {
+    userName  : null,
+    interests : [],
+    history   : []   // { role, content }[]
+  };
+
+>>>>>>> 31a7419c9e95be07dbe9b806a86f496cc81f2b8b
+  const messagesEl = document.getElementById('messages');
+  const inputEl    = document.getElementById('user-input');
+  const sendBtn    = document.getElementById('send-btn');
+
+<<<<<<< HEAD
+  function scrollBottom() { messagesEl.scrollTop = messagesEl.scrollHeight; }
+
+=======
+  /* ── Toast ── */
+  function showToast(msg, duration = 4000) {
+    const t = document.getElementById('toast');
+    t.textContent = msg;
+    t.style.display = 'block';
+    setTimeout(() => { t.style.display = 'none'; }, duration);
+  }
+
+  /* ── Scroll ── */
+  function scrollBottom() { messagesEl.scrollTop = messagesEl.scrollHeight; }
+
+  /* ── Add bubble ── */
+>>>>>>> 31a7419c9e95be07dbe9b806a86f496cc81f2b8b
+  function addMessage(html, role) {
+    const wrap = document.createElement('div');
+    wrap.className = 'msg ' + role;
+    const av = document.createElement('div');
+    av.className = 'av-sm ' + (role === 'user' ? 'av-user' : 'av-bot');
+    av.textContent = role === 'user' ? 'You' : 'NP';
+    const bub = document.createElement('div');
+    bub.className = 'bubble';
+    bub.innerHTML = html
+      .replace(/\n/g, '<br>')
+      .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+    wrap.appendChild(av);
+    wrap.appendChild(bub);
+    messagesEl.appendChild(wrap);
+    scrollBottom();
+  }
+
+<<<<<<< HEAD
+=======
+  /* ── Typing indicator ── */
+>>>>>>> 31a7419c9e95be07dbe9b806a86f496cc81f2b8b
+  function showTyping() {
+    const wrap = document.createElement('div');
+    wrap.className = 'msg bot'; wrap.id = 'typing-wrap';
+    const av = document.createElement('div');
+    av.className = 'av-sm av-bot'; av.textContent = 'NP';
+    const ind = document.createElement('div');
+    ind.className = 'typing';
+    ind.innerHTML = '<span></span><span></span><span></span>';
+    wrap.appendChild(av); wrap.appendChild(ind);
+<<<<<<< HEAD
+    messagesEl.appendChild(wrap); scrollBottom();
+=======
+    messagesEl.appendChild(wrap);
+    scrollBottom();
+>>>>>>> 31a7419c9e95be07dbe9b806a86f496cc81f2b8b
+  }
+  function hideTyping() {
+    const el = document.getElementById('typing-wrap');
+    if (el) el.remove();
+  }
+
+<<<<<<< HEAD
+  function extractMemory(text) {
+    const m = text.match(/(?:my name is|i(?:'m| am) called|call me)\s+([A-Z][a-z]+)/i);
+    if (m) memory.userName = m[1];
+    ['volunteer','donate','education','health','women','skill','children']
+=======
+  /* ── Extract memory from message ── */
+  function extractMemory(text) {
+    const m = text.match(/(?:my name is|i(?:'m| am) called|call me)\s+([A-Z][a-z]+)/i);
+    if (m) memory.userName = m[1];
+    ['volunteer','donate','education','health','women','skill','children','teach']
+>>>>>>> 31a7419c9e95be07dbe9b806a86f496cc81f2b8b
+      .forEach(kw => {
+        if (text.toLowerCase().includes(kw) && !memory.interests.includes(kw))
+          memory.interests.push(kw);
+      });
+  }
+
+<<<<<<< HEAD
+  async function callBackend(userText) {
+    extractMemory(userText);
+    let note = '';
+    if (memory.userName) note += `User's name: ${memory.userName}. `;
+    if (memory.interests.length) note += `Interests: ${memory.interests.join(', ')}. `;
+    const userContent = note ? `[Memory: ${note}]\n${userText}` : userText;
+
+    const msgs = [...memory.history, { role: 'user', content: userContent }];
+
+    // Calls Vercel serverless function at /api/chat
+    const res = await fetch('/api/chat', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ messages: msgs })
+    });
+
+    const data = await res.json();
+    if (!res.ok) throw new Error(data.error || 'Server error');
+
+    memory.history.push({ role: 'user', content: userText });
+    memory.history.push({ role: 'assistant', content: data.reply });
+    if (memory.history.length > 40) memory.history = memory.history.slice(-40);
+
+    return data.reply;
+  }
+
+  async function handleSend() {
+    const text = inputEl.value.trim();
+    if (!text) return;
+    inputEl.value = '';
+    sendBtn.disabled = true;
+    addMessage(text, 'user');
+    showTyping();
+=======
+  /* ── Call our own backend ── */
+  async function callBackend(userText) {
+    extractMemory(userText);
+
+    let note = '';
+    if (memory.userName)       note += `User's name: ${memory.userName}. `;
+    if (memory.interests.length) note += `Interests: ${memory.interests.join(', ')}. `;
+
+    const userContent = note ? `[Memory: ${note}]\n${userText}` : userText;
+
+    const msgs = [
+      ...memory.history,
+      { role: 'user', content: userContent }
+    ];
+
+    // POST to our own server — no API key in the browser
+    const res = await fetch('/api/chat', {
+      method : 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body   : JSON.stringify({ messages: msgs })
+    });
+
+    const data = await res.json();
+
+    if (!res.ok) throw new Error(data.error || `HTTP ${res.status}`);
+
+    const reply = data.reply || '(no response)';
+
+    // Save to history (raw text, not with memory note)
+    memory.history.push({ role: 'user',      content: userText });
+    memory.history.push({ role: 'assistant', content: reply });
+
+    // Keep last 40 turns max
+    if (memory.history.length > 40) memory.history = memory.history.slice(-40);
+
+    return reply;
+  }
+
+  /* ── Handle send ── */
+  async function handleSend() {
+    const text = inputEl.value.trim();
+    if (!text) return;
+
+    inputEl.value   = '';
+    sendBtn.disabled = true;
+    addMessage(text, 'user');
+    showTyping();
+
+>>>>>>> 31a7419c9e95be07dbe9b806a86f496cc81f2b8b
+    try {
+      const reply = await callBackend(text);
+      hideTyping();
+      addMessage(reply, 'bot');
+    } catch (e) {
+      hideTyping();
+<<<<<<< HEAD
+      addMessage(`⚠️ ${e.message}`, 'bot');
+    }
+=======
+      addMessage('Something went wrong. Please try again in a moment.', 'bot');
+      showToast('Error: ' + e.message);
+    }
+
+>>>>>>> 31a7419c9e95be07dbe9b806a86f496cc81f2b8b
+    sendBtn.disabled = false;
+    inputEl.focus();
+  }
+
+<<<<<<< HEAD
+  function sendQuick(text) { inputEl.value = text; handleSend(); }
+  inputEl.addEventListener('keydown', e => { if (e.key === 'Enter') handleSend(); });
+=======
+  function sendQuick(text) {
+    inputEl.value = text;
+    handleSend();
+  }
+
+  inputEl.addEventListener('keydown', e => {
+    if (e.key === 'Enter' && !sendBtn.disabled) handleSend();
+  });
+>>>>>>> 31a7419c9e95be07dbe9b806a86f496cc81f2b8b
+</script>
+</body>
+</html>
