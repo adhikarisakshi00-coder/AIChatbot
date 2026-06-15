@@ -51,12 +51,11 @@ nayepankh-chatbot/
 
 ## Getting Started
 
-### Step 1 — Get a Free Gemini API Key
-1. Go to [aistudio.google.com](https://aistudio.google.com)
+### Step 1 — Get a Free Groq API Key
+1. Go to https://console.groq.com/keys
 2. Sign in with your Google account
 3. Click **Get API Key** → **Create API Key**
-4. Copy the key — it's free, no credit card needed
-5. Free limit: **1,500 requests/day**
+4. Copy the key 
 
 ### Step 2 — Push to GitHub
 ```bash
