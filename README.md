@@ -40,9 +40,7 @@ AI model processes each message using a custom system prompt loaded with knowled
 nayepankh-chatbot/
 ├── api/
 │   └── chat.js         ← Vercel serverless function (AI proxy)
-├── public/
-│   └── index.html      ← Frontend chat interface
-├── vercel.json         ← Vercel routing config
+├── index.html          ← Frontend chat interface     
 ├── package.json        ← Project info
 ├── .env.example        ← Environment variable template
 ├── .gitignore          ← Keeps secrets off GitHub
