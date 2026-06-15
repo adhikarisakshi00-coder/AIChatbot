@@ -15,7 +15,7 @@ User (Browser)  →  Vercel Serverless Function  →  GROQ AI
 A single HTML + CSS + JavaScript file that renders the chat interface, handles user input, stores conversation history in memory, and sends messages to our backend API.
 
 **2. Backend — `api/chat.js`**
-A Vercel serverless function that acts as a secure proxy. It receives messages from the browser and forwards them to Google Gemini's API. The API key lives here on the server — never exposed to the user.
+A Vercel serverless function that acts as a secure proxy. It receives messages from the browser and forwards them to Groq API. The API key lives here on the server — never exposed to the user.
 
 **3. AI — Groq**
 AI model processes each message using a custom system prompt loaded with knowledge about Nayepankh Foundation — its programs, mission, values, and personality.
