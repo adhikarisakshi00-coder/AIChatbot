@@ -8,7 +8,7 @@ An AI-powered chatbot built for **Nayepankh Foundation** to help visitors learn 
 This chatbot uses a three-layer architecture:
 
 ```
-User (Browser)  →  Vercel Serverless Function  →  Google Gemini AI
+User (Browser)  →  Vercel Serverless Function  →  GROQ AI
 ```
 
 **1. Frontend — `public/index.html`**
@@ -17,8 +17,8 @@ A single HTML + CSS + JavaScript file that renders the chat interface, handles u
 **2. Backend — `api/chat.js`**
 A Vercel serverless function that acts as a secure proxy. It receives messages from the browser and forwards them to Google Gemini's API. The API key lives here on the server — never exposed to the user.
 
-**3. AI — Google Gemini 1.5 Flash**
-Google's free AI model processes each message using a custom system prompt loaded with knowledge about Nayepankh Foundation — its programs, mission, values, and personality.
+**3. AI — Groq**
+AI model processes each message using a custom system prompt loaded with knowledge about Nayepankh Foundation — its programs, mission, values, and personality.
 
 
 ## Features
