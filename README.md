@@ -106,8 +106,8 @@ https://nayepankh-chat.vercel.app
 |---|---|
 | Frontend | HTML, CSS, Vanilla JavaScript |
 | Backend | Vercel Serverless Functions (Node.js) |
-| AI Model | Google Gemini 1.5 Flash |
-| Hosting | Vercel (free tier) |
+| AI Model | Groq AI |
+| Hosting | Vercel  |
 
 
 ## About Nayepankh Foundation
